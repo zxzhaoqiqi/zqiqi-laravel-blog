@@ -12,8 +12,6 @@ mysql5.7
 
 nginx 1.10
 
----
-
 #### 开发环境部署/安装
 1. 修改本地host文件 增加`study.test`
 

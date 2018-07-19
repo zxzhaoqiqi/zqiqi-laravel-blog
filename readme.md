@@ -22,8 +22,15 @@ nginx 1.10
 ```
 create database lv_study DEFAULT charset utf8mb4 collate utf8mb4_general_ci;
 ```
-
-
+3. 运行迁移
+```
+php artisan migrate
+php artisan db:seed
+```
+或者
+```$xslt
+php artisan migrate:refresh --seed
+```
 
 ## 服务器架构说明
 

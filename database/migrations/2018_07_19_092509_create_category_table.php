@@ -21,9 +21,11 @@ class CreateCategoryTable extends Migration
             $table->string('thumb')->default('');
             $table->unsignedTinyInteger('is_show')->default(1)->comment('是否显示');
             $table->string('path');
+            $table->unsignedInteger('page_veriable_id');
             $table->timestamps();
 
             $table->index('pid');
+            $table->index('page_veriable_id');
         });
     }
 

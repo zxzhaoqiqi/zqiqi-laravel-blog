@@ -21,9 +21,11 @@ class CreateArticlesTable extends Migration
             $table->string('keyword')->default('');
             $table->string('thumb')->default('');
             $table->unsignedTinyInteger('status')->default(1)->comment('1上架 2下架 3删除');
+            $table->unsignedInteger('page_veriable_id');
             $table->timestamps();
 
             $table->index('category_id');
+            $table->index('page_veriable_id');
         });
     }
 

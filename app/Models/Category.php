@@ -7,14 +7,15 @@ use Prettus\Repository\Contracts\Transformable;
 use Prettus\Repository\Traits\TransformableTrait;
 
 /**
- * Class Article.
+ * Class Category.
  *
  * @package namespace App\Models;
  */
-class Article extends Model implements Transformable
+class Category extends Model implements Transformable
 {
     use TransformableTrait;
 
+    protected $table = 'category';
     /**
      * The attributes that are mass assignable.
      *

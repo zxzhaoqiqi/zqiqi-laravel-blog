@@ -13,11 +13,13 @@ class CreateArticlesContentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('articles_contents', function (Blueprint $table) {
+        Schema::create('article_contents', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedBigInteger('articles_id');
+            $table->unsignedBigInteger('article_id');
             $table->text('content');
             $table->timestamps();
+
+            $table->index('article_id');
         });
     }
 
@@ -28,6 +30,6 @@ class CreateArticlesContentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('articles_contents');
+        Schema::dropIfExists('article_contents');
     }
 }

@@ -7,11 +7,11 @@ use Prettus\Repository\Contracts\Transformable;
 use Prettus\Repository\Traits\TransformableTrait;
 
 /**
- * Class Article.
+ * Class ArticleTag.
  *
  * @package namespace App\Models;
  */
-class Article extends Model implements Transformable
+class ArticleTag extends Model implements Transformable
 {
     use TransformableTrait;
 

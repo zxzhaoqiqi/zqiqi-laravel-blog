@@ -20,7 +20,8 @@ nginx 1.10
 ```
 create database lv_study DEFAULT charset utf8mb4 collate utf8mb4_general_ci;
 ```
-3. 运行迁移
+
+3.运行迁移
 ```
 php artisan migrate
 php artisan db:seed
@@ -35,8 +36,7 @@ php artisan migrate:refresh --seed
 ## 代码上线
 
 ## 扩展包说明
-
-## 自定义 Artisan 命令列表
+l5-repository : https://github.com/andersao/l5-repository
 
 
 

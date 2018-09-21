@@ -1,0 +1,583 @@
+
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Excel.Sheet>
+<style type="text/css">
+td {
+	font-family:Calibri;
+	font-size: 14px;
+	mso-number-format:"\@";
+}
+</style>
+</head>
+<body>
+<table border=1 cellpadding=0 cellspacing=0>
+    <tr>
+        <td bgcolor="#dddddd"><strong>参加站点</strong></td>
+        <td bgcolor="#dddddd"><strong>公司名</strong></td>
+        <td bgcolor="#c2d69a"><strong>北京站洽谈数量</strong></td>
+        <td bgcolor="#95b3d7"><strong>上海站洽谈数量</strong></td>
+        <td bgcolor="#fcd5b4"><strong>深圳站洽谈数量</strong></td>
+  </tr>
+ 
+	<tr>
+        <td>北京站，上海站</td>
+        <td>澳门喜来登中心大酒店&澳门瑞吉酒店</td>
+        <td>14</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>北京瑰丽酒店</td>
+        <td>28</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>长白山吉视传媒铂尔曼度假酒店</td>
+        <td>40</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>广州日航酒店</td>
+        <td>27</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>瑰丽酒店集团</td>
+        <td>46</td>
+        <td>2</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>海南雅居乐莱佛士酒店</td>
+        <td>42</td>
+        <td>1</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>杭州国际博览中心</td>
+        <td>22</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>荷兰RAI 阿姆斯特丹会展中心<br/>荷兰万奥兰治大酒店</td>
+        <td>20</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>荷兰国家旅游会议促进局</td>
+        <td>20</td>
+        <td>1</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>加拿大艾伯塔省旅游局</td>
+        <td>22</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>金鹰国际酒店集团</td>
+        <td>15</td>
+        <td>1</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>南昌保利皇冠假日酒店</td>
+        <td>32</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>南昌万达文华酒店&南昌万达嘉华度假酒店</td>
+        <td>32</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>南京华泰万丽酒店</td>
+        <td>34</td>
+        <td>1</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>南京景枫万豪酒店</td>
+        <td>31</td>
+        <td>1</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>南京绿地洲际酒店</td>
+        <td>32</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>宁海安岚酒店</td>
+        <td>38</td>
+        <td>1</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>三亚太阳湾柏悦酒店</td>
+        <td>36</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>上海建工浦江皇冠假日酒店</td>
+        <td>24</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>上海三甲港绿地铂瑞酒店<br/>上海三甲港绿地铂骊酒店<br/>上海三甲港绿地铂派酒店<br/>绿地国际会议中心</td>
+        <td>30</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>上海雅居乐万豪酒店</td>
+        <td>38</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>上海卓美亚喜玛拉雅酒店</td>
+        <td>48</td>
+        <td>1</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>深圳桔钓沙莱华度假酒店</td>
+        <td>41</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>深圳龙岗珠江皇冠假日酒店</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>深圳五洲宾馆</td>
+        <td>34</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>苏宁酒店及度假村管理有限公司</td>
+        <td>29</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>苏州独墅湖世尊酒店</td>
+        <td>36</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>苏州凯悦酒店</td>
+        <td>35</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>苏州日航酒店</td>
+        <td>28</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>苏州知音温德姆酒店</td>
+        <td>21</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>苏州洲际酒店</td>
+        <td>40</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>文华东方酒店集团</td>
+        <td>71</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>无锡君来洲际酒店</td>
+        <td>39</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>无锡太湖皇冠假日酒店</td>
+        <td>37</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>武汉汉南绿地铂瑞酒店</td>
+        <td>36</td>
+        <td>1</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>武汉汉秀剧场（武汉万达德贡演艺有限公司）</td>
+        <td>24</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>厦门北海湾惠龙万达嘉华酒店</td>
+        <td>26</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>厦门瑞颐大酒店</td>
+        <td>38</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>新绎七修酒店</td>
+        <td>42</td>
+        <td>1</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>银川国际交流中心酒店</td>
+        <td>33</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站</td>
+        <td>舟山三盛铂尔曼大酒店</td>
+        <td>44</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站，深圳站</td>
+        <td>「澳門銀河™」综合度假城</td>
+        <td>32</td>
+        <td>0</td>
+        <td>18</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站，深圳站</td>
+        <td>MSC地中海邮轮</td>
+        <td>20</td>
+        <td>0</td>
+        <td>12</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站，深圳站</td>
+        <td>澳大利亚旅游局</td>
+        <td>23</td>
+        <td>1</td>
+        <td>35</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站，深圳站</td>
+        <td>大理国际大酒店</td>
+        <td>48</td>
+        <td>1</td>
+        <td>31</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站，深圳站</td>
+        <td>海棠湾红树林度假酒店</td>
+        <td>34</td>
+        <td>0</td>
+        <td>12</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站，深圳站</td>
+        <td>湖州喜来登温泉度假酒店</td>
+        <td>52</td>
+        <td>0</td>
+        <td>23</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站，深圳站</td>
+        <td>蓝鼎·济州神话世界</td>
+        <td>20</td>
+        <td>0</td>
+        <td>17</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站，深圳站</td>
+        <td>千禧国际酒店集团</td>
+        <td>34</td>
+        <td>1</td>
+        <td>32</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站，深圳站</td>
+        <td>青岛红树林度假世界</td>
+        <td>6</td>
+        <td>0</td>
+        <td>12</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站，深圳站</td>
+        <td>三亚湾红树林度假世界</td>
+        <td>30</td>
+        <td>0</td>
+        <td>18</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站，深圳站</td>
+        <td>上海虹桥绿地铂瑞酒店&上海虹桥绿地铂瑞公寓&上海虹桥绿地铂骊酒店</td>
+        <td>22</td>
+        <td>0</td>
+        <td>18</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站，深圳站</td>
+        <td>上海佘山茂御臻品之选酒店</td>
+        <td>37</td>
+        <td>0</td>
+        <td>23</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站，深圳站</td>
+        <td>苏州金鸡湖国际会议中心</td>
+        <td>25</td>
+        <td>0</td>
+        <td>30</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站，深圳站</td>
+        <td>无锡拈花湾文化投资发展有限公司</td>
+        <td>35</td>
+        <td>0</td>
+        <td>20</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站，深圳站</td>
+        <td>亚龙湾红树林度假酒店</td>
+        <td>38</td>
+        <td>0</td>
+        <td>19</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站，深圳站</td>
+        <td>洲际酒店集团</td>
+        <td>66</td>
+        <td>0</td>
+        <td>33</td>
+	</tr>
+
+	<tr>
+        <td>北京站，上海站，深圳站</td>
+        <td>卓美亚酒店集团</td>
+        <td>11</td>
+        <td>0</td>
+        <td>21</td>
+	</tr>
+
+	<tr>
+        <td>北京站</td>
+        <td>雁栖湖国际会展中心</td>
+        <td>34</td>
+        <td>0</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>北京站，深圳站</td>
+        <td>上海浦东绿地铂骊酒店</td>
+        <td>35</td>
+        <td>0</td>
+        <td>21</td>
+	</tr>
+
+	<tr>
+        <td>上海站</td>
+        <td>苏州文博诺富特酒店</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+	</tr>
+
+	<tr>
+        <td>上海站，深圳站</td>
+        <td>北京北辰五洲皇冠国际酒店</td>
+        <td>0</td>
+        <td>0</td>
+        <td>22</td>
+	</tr>
+
+	<tr>
+        <td>上海站，深圳站</td>
+        <td>北京兴基铂尔曼饭店</td>
+        <td>0</td>
+        <td>0</td>
+        <td>27</td>
+	</tr>
+
+	<tr>
+        <td>深圳站</td>
+        <td>长沙北辰洲际酒店</td>
+        <td>0</td>
+        <td>0</td>
+        <td>24</td>
+	</tr>
+
+	<tr>
+        <td>深圳站</td>
+        <td>美狮美高梅</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18</td>
+	</tr>
+
+	<tr>
+        <td>深圳站</td>
+        <td>深圳星河丽思卡尔顿酒店</td>
+        <td>0</td>
+        <td>0</td>
+        <td>22</td>
+	</tr>
+
+	<tr>
+        <td>深圳站</td>
+        <td>厦门建发旅游集团有限公司（海悦山庄&福州西湖酒店）</td>
+        <td>0</td>
+        <td>0</td>
+        <td>34</td>
+	</tr>
+
+	<tr>
+        <td>深圳站</td>
+        <td>厦门建发旅游集团有限公司（厦门悦华&两会酒店）</td>
+        <td>0</td>
+        <td>0</td>
+        <td>37</td>
+	</tr>
+
+	<tr>
+        <td>深圳站</td>
+        <td>云顶邮轮集团</td>
+        <td>0</td>
+        <td>0</td>
+        <td>13</td>
+	</tr>
+
+</table>
+</body>
+
+</html>

@@ -40,15 +40,15 @@ class ExpReport extends Command
         parent::__construct();
         $this->expPath = public_path() . '/' . 'exp/clx/report';
         //洽谈记录三站
-        $this->sanzhanPath = $this->expPath .  '/sanzhan.xlsx';
+        $this->sanzhanPath = $this->expPath .  '/sanzhan_0925.xlsx';
         //展商预约和实际洽谈统计
         $this->yuyuePath = $this->expPath .  '/yueyue.xlsx';
         //完成现场洽谈买家信息-1
-        $this->finishPath = $this->expPath .  '/finish_0515.xlsx';
+        $this->finishPath = $this->expPath .  '/finish_0926.xlsx';
         //模板
-        $this->tplPath = $this->expPath . '/test_tpl.docx';
+        $this->tplPath = $this->expPath . '/test_tpl_new.docx';
         //导出文件路径
-        $this->reportPath = public_path() . '/' . 'exp/clx/report/';
+        $this->reportPath = public_path() . '/' . 'exp/clx/report/xx/';
     }
 
     /**
@@ -59,44 +59,60 @@ class ExpReport extends Command
     public function handle()
     {
         $arrStation = $this->getDataSanZhan();
-        $zsArr = $this->getDataYuyue();
-        $tmp = $zsArr[0];
-        $zsArr = [];
-        $zsArr[] = $tmp;
+        $finishData = $this->getFinishData();
+//        reset($arrStation); // 如果确定数组的指针指向第一个元素，可以不使用本语句
+//        $tmp = current($arrStation); // $value 的值为：'aaa'\
+//        $key = key($arrStation);
+//        $arrStation = [];
+//        $arrStation[$key] = $tmp;
+        $bar = $this->output->createProgressBar(count($arrStation));
 
-        $bar = $this->output->createProgressBar(count($zsArr));
-
-        foreach ($zsArr as $k => $v){
+        foreach ($arrStation as $k => $v){
             $word =  $this->getFileWordTplObj();
-            $word->setValue('com', $v['A']);
-            $word->setValue('qt_total', $v['B']);
+            $word->setValue('com', $k);
 
             //计算平均分
             $avei = 0;
-            if(is_numeric($v['C'])){
+            $total = 0;
+            if (isset($v['北京站'])){
                 $avei++;
+                $qt_beijing = count($v['北京站']);
+                $total += $qt_beijing;
+            }else{
+                $qt_beijing =  '-';
             }
-            if(is_numeric($v['D'])){
+
+            if (isset($v['上海站'])){
                 $avei++;
+                $qt_shanghai = count($v['上海站']);
+                $total += $qt_shanghai;
+            }else{
+                $qt_shanghai =  '-';
             }
-            if(is_numeric($v['E'])){
+
+            if (isset($v['深圳站'])){
                 $avei++;
+                $qt_shenzhen = count($v['深圳站']);
+                $total += $qt_shenzhen;
+            }else{
+                $qt_shenzhen =  '-';
             }
 
             if($avei > 0){
                 //四舍五入取整
-                $ave = $v['B'] / $avei;
+                $ave = $total / $avei;
                 $ave = round($ave);
             }else{
                 $ave = '-';
             }
+            $word->setValue('qt_total', $total);
             $word->setValue('qt_ave', $ave);
-            $word->setValue('qt_beijing', $v['C']);
-            $word->setValue('qt_shanghai', $v['D']);
-            $word->setValue('qt_shenzhen', $v['E']);
-            if($arrStation[$v['A']]){
+            $word->setValue('qt_beijing', $qt_beijing);
+            $word->setValue('qt_shanghai', $qt_shanghai);
+            $word->setValue('qt_shenzhen', $qt_shenzhen);
+            if($arrStation[$k]){
                 //展商详细
-                $detailArr = $arrStation[$v['A']];
+                $detailArr = $arrStation[$k];
                 if(isset($detailArr['北京站'])){
                     $this->makeDataDetailCity($word, $detailArr['北京站'], 'a', 'E');
                 }else{
@@ -119,13 +135,14 @@ class ExpReport extends Command
             }
 
             //完成现场洽谈的买家信息
-            $this->makeDataDetailFinish($word, $v['A']);
+            $this->makeDataDetailFinish($word, $k, $finishData);
 
             //保存文件名处理
-            $v['A'] = str_replace('/', '_', $v['A']);
+            $k = str_replace('/', '_', $k);
 
-            $file = 'MICE China EXPO 2018秋季场报告_' . $v['A'] . '.docx';
+            $file = 'MICE China EXPO 2018秋季场报告_' . $k . '.docx';
             $res = $this->reportPath . $file;
+
             $word->saveAs($res);
             $bar->advance();
         }
@@ -134,17 +151,8 @@ class ExpReport extends Command
 
     }
 
-    private function makeDataDetailFinish(&$word, $com){
-
-        $data = $this->getFileExcelObj($this->finishPath);
-        unset($data[1]);
-
-        $tmpArr = [];
-        foreach ($data as $k => $v){
-            if($v['V'] == $com){
-                $tmpArr[] = $v;
-            }
-        }
+    private function makeDataDetailFinish(&$word, $com, $finishData){
+        $tmpArr = isset($finishData[$com]) ? $finishData[$com] : [];
         if(!$tmpArr){
             $word->deleteBlock('H');
             return;
@@ -153,8 +161,6 @@ class ExpReport extends Command
         $word->cloneRow( 'd1', count($tmpArr));
         foreach ($tmpArr as $a => $b){
             $tmp = [
-                $b['B'],
-                $b['C'],
                 $b['D'],
                 $b['E'],
                 $b['F'],
@@ -170,7 +176,9 @@ class ExpReport extends Command
                 $b['P'],
                 $b['Q'],
                 $b['R'],
-                $b['S']
+                $b['S'],
+                $b['T'],
+                $b['U']
             ];
             $col = count($tmp);
             for ($bi = 1; $bi < $col+1; $bi++){
@@ -189,11 +197,11 @@ class ExpReport extends Command
             $tmp = [
                 $a+1,
                 $b['C'],
+                $b['D'],
                 $b['E'],
                 $b['F'],
                 $b['G'],
-                $b['J'],
-                $b['K']
+                $b['H']
             ];
             $col = count($tmp);
             for ($bi = 1; $bi < $col+1; $bi++){
@@ -216,12 +224,30 @@ class ExpReport extends Command
         return array_values($zsArr);
     }
 
+    private function getFinishData(){
+        $data = $this->getFileExcelObj($this->finishPath);
+        unset($data[1]);
+
+        $tmpArr = [];
+        foreach ($data as $k => $v){
+            $tmpArr[$v['A']][] = $v;
+        }
+
+        return $tmpArr;
+    }
+
     private function getDataSanZhan(){
         $arr = $this->getFileExcelObj($this->sanzhanPath);
         unset($arr[1]);
         $tmp = [];
         foreach ($arr as $k => $v){
-            $tmp[$v['B']][$v['A']][] = $v;
+            if (in_array($v['I'], ['上午场', '下午场'])){
+                $tmp[$v['B']]['北京站'][] = $v;
+            }elseif (in_array($v['J'], ['上午场', '下午场'])){
+                $tmp[$v['B']]['上海站'][] = $v;
+            }elseif (in_array($v['K'], ['上午场', '下午场'])){
+                $tmp[$v['B']]['深圳站'][] = $v;
+            }
         }
         return $tmp;
     }

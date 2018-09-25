@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "acb8c6084e7639833b7681ce8a91de06",
+    "content-hash": "175e9299828b3d9208bd2d5db3ee225e",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1150,7 +1150,7 @@
         },
         {
             "name": "phpoffice/phpword",
-            "version": "0.15.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PHPWord.git",
@@ -4424,7 +4424,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "phpoffice/phpword": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

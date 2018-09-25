@@ -40,15 +40,15 @@ class ExpReport extends Command
         parent::__construct();
         $this->expPath = public_path() . '/' . 'exp/clx/report';
         //洽谈记录三站
-        $this->sanzhanPath = $this->expPath .  '/sanzhan_0925.xlsx';
+        $this->sanzhanPath = $this->expPath .  '/sanzhan_0926_11.xlsx';
         //展商预约和实际洽谈统计
         $this->yuyuePath = $this->expPath .  '/yueyue.xlsx';
         //完成现场洽谈买家信息-1
-        $this->finishPath = $this->expPath .  '/finish_0926.xlsx';
+        $this->finishPath = $this->expPath .  '/finish_0926_11.xlsx';
         //模板
         $this->tplPath = $this->expPath . '/test_tpl_new.docx';
         //导出文件路径
-        $this->reportPath = public_path() . '/' . 'exp/clx/report/xx/';
+        $this->reportPath = public_path() . '/' . 'exp/report/';
     }
 
     /**
@@ -62,14 +62,16 @@ class ExpReport extends Command
         $finishData = $this->getFinishData();
 //        reset($arrStation); // 如果确定数组的指针指向第一个元素，可以不使用本语句
 //        $tmp = current($arrStation); // $value 的值为：'aaa'\
-//        $key = key($arrStation);
+//        $key = '厦门建发旅游集团有限公司（厦门悦华>两会酒店）';
 //        $arrStation = [];
 //        $arrStation[$key] = $tmp;
+//
+////        dd($arrStation);
         $bar = $this->output->createProgressBar(count($arrStation));
 
         foreach ($arrStation as $k => $v){
             $word =  $this->getFileWordTplObj();
-            $word->setValue('com', $k);
+            $word->setValue('com', str_replace('&', '&amp;', $k));
 
             //计算平均分
             $avei = 0;

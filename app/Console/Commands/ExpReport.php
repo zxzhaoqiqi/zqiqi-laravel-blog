@@ -48,7 +48,7 @@ class ExpReport extends Command
         //模板
         $this->tplPath = $this->expPath . '/test_tpl.docx';
         //导出文件路径
-        $this->reportPath = public_path() . '/' . 'exp/report/';
+        $this->reportPath = public_path() . '/' . 'exp/clx/report/';
     }
 
     /**
@@ -121,11 +121,10 @@ class ExpReport extends Command
             //完成现场洽谈的买家信息
             $this->makeDataDetailFinish($word, $v['A']);
 
-            //保存文件信息
-            if($v['A'] == '厦门悦华酒店/厦门国际会议中心酒店'){
-                $v['A'] = '厦门悦华酒店_厦门国际会议中心酒店';
-            }
-            $file = 'MICE China EXPO 2018春季场报告_' . $v['A'] . '.docx';
+            //保存文件名处理
+            $v['A'] = str_replace('/', '_', $v['A']);
+
+            $file = 'MICE China EXPO 2018秋季场报告_' . $v['A'] . '.docx';
             $res = $this->reportPath . $file;
             $word->saveAs($res);
             $bar->advance();

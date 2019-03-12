@@ -3,18 +3,17 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Prettus\Repository\Providers\RepositoryServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
-
     /**
-     * AppServiceProvider constructor.
-     * @param \Illuminate\Contracts\Foundation\Application $app
+     * Register any application services.
+     *
+     * @return void
      */
-    public function __construct(\Illuminate\Contracts\Foundation\Application $app)
+    public function register()
     {
-        parent::__construct($app);
+        //
     }
 
     /**
@@ -25,15 +24,5 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-    }
-
-    /**
-     * Register any application services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        $this->app->register(RepositoryServiceProvider::class);
     }
 }
